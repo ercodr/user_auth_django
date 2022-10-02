@@ -1,0 +1,6 @@
+{% extends 'user_auth_app/base.html' %}
+
+{% block content %} 
+    <h1>Welcome, {{ user }}</h1>
+    <a href="{% url 'logout' %}">Logout</a>
+{% endblock %}
